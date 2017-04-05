@@ -20,9 +20,7 @@
         <div class="header">
             <div class="title" style="background-color: #000000">
                 &nbsp;&nbsp;&nbsp;
-                <asp:Image ID="Image1" runat="server" Height="102px" 
-                    ImageUrl="~/Images/Telling Mobile Logo.png" Width="232px" />
-            </div>           
+                </div>           
             <div class="loginDisplay" style="background-color: #000000">
                 <h1 style="font-family: Calibri">
                     Administration Panel
