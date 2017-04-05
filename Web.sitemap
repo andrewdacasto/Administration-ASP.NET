@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Login.aspx" title="Home"  description="User Login">
+    <siteMapNode title="Search"  description="Search Fields" roles="Admin">
+      <siteMapNode url="~/Search/frmSearchJobs.aspx" title="Job Audit"  description="Search Jobs" roles="Admin"/>
+      <siteMapNode url="~/Search/frmSearchSerial.aspx" title="Current Status"  description="Search Serials" roles="Admin"/>
+      <siteMapNode url="~/Search/frmSearchUsers.aspx" title="Users"  description="Search Users" />
+      <siteMapNode url="~/Search/frmSearchProjects.aspx" title="Projects"  description="Search Projects"/>
+      <siteMapNode url="~/Search/frmSearchParts.aspx" title="Part Numbers"  description="Search Parts" />
+      <siteMapNode url="~/Search/frmSearchRejectSN.aspx" title="Rejected Panel"  description="Search Rejected Parts" />
+    </siteMapNode>
+    <siteMapNode title="Create Records"  description="Create a new Records" roles="Admin">
+      <siteMapNode url="~/Create/frmCreatePart.aspx" title="Create Parts"  description="Create Parts" roles="Admin" />
+       <siteMapNode url="~/Create/frmCreateProject.aspx" title="Create Projects"  description="Create Projects" roles="Admin" />
+      <siteMapNode url="~/Create/frmCreateJob.aspx" title="Create Jobs"  description="Create Jobs" roles="Admin" />
+     <siteMapNode url="~/Create/frmCreateUser.aspx" title="Create Users"  description="Create Users" roles="Admin" />
+   </siteMapNode>
+    <siteMapNode title="Administration"  description="Create a new Records" roles="Admin">
+      <siteMapNode url="~/Admin/DeletePart.aspx" title="Delete Part"  description="Delete Part" roles="Admin" />
+      <siteMapNode url="~/Admin/DeleteProject.aspx" title="Delete Project"  description="Delete Project" roles="Admin" />
+      <siteMapNode url="~/Admin/DeleteJob.aspx" title="Delete Jobs"  description="Delete Jobs" roles="Admin" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="Telling___Administration__ASP.NET_.SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+     
+    <style type="text/css">
+        .h3
+        {
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Master" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title" style="background-color: #000000">
+                &nbsp;&nbsp;&nbsp;
+                <asp:Image ID="Image1" runat="server" Height="102px" 
+                    ImageUrl="~/Images/Telling Mobile Logo.png" Width="232px" />
+            </div>           
+            <div class="loginDisplay" style="background-color: #000000">
+                <h1 style="font-family: Calibri">
+                    Administration Panel
+                </h1>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+                        <asp:Label ID="lbl" runat="server" Height="25px" ForeColor="White" 
+                            style="margin-left: 32px"></asp:Label>
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <br />
+                        [ <a href="~/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <br />
+                <br />
+                <br />
+            </div>
+            <div class="h3"style="background-color: #000000">
+                           
+            </div>
+        </div>
+        <div class="clear">
+        <table width="100%" frame="border">
+                  <tr valign="top">
+          <td style="border-style: none; width:170px; border-left-color: #000011; border-bottom-color: #000011; border-top-color: #000011; height: 281px; border-right-color: #000011; ">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="False" DataSourceID="SiteMapDS" 
+                    StaticDisplayLevels="2">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDS" runat="server" />
+         </td>
+         <td style="border-style: none; height: 281px; border-left-color: black; border-bottom-color: black; border-top-color: black; border-right-color: black; ">
+
+            <asp:ContentPlaceHolder ID="FeaturedContent" runat="server">
+                <p style="border-style: none">
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+       </td>
+       </tr>
+       </table>
+
+        </div>
+    </div>
+    <div class="footer">
+        
+        Maxim Computer Services Ltd.<br />
+        Unit 7 Key Point, Lower Keys Business Park, Hednesford, Staffordshire WS12 2FN<br />
+        Tel: 0845 0700599 Fax: 0845 0700598</div>
+    </form>
+</body>
+</html>

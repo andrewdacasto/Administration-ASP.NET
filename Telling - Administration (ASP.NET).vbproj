@@ -1,0 +1,1560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A240DE2D-7A7C-439C-B345-F25912137B5A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Telling___Administration__ASP.NET_</RootNamespace>
+    <AssemblyName>Telling - Administration %28ASP.NET%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Telling - Administration %28ASP.NET%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Telling - Administration %28ASP.NET%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Admin\DeleteJob.aspx" />
+    <Content Include="Admin\DeletePart.aspx" />
+    <Content Include="Admin\DeleteProject.aspx" />
+    <Content Include="Admin\media\css\TableTools.css" />
+    <Content Include="Admin\media\css\TableTools_JUI.css" />
+    <Content Include="Admin\media\images\background.png" />
+    <Content Include="Admin\media\images\collection.png" />
+    <Content Include="Admin\media\images\collection_hover.png" />
+    <Content Include="Admin\media\images\copy.png" />
+    <Content Include="Admin\media\images\copy_hover.png" />
+    <Content Include="Admin\media\images\csv.png" />
+    <Content Include="Admin\media\images\csv_hover.png" />
+    <Content Include="Admin\media\images\pdf.png" />
+    <Content Include="Admin\media\images\pdf_hover.png" />
+    <Content Include="Admin\media\images\print.png" />
+    <Content Include="Admin\media\images\print_hover.png" />
+    <Content Include="Admin\media\images\xls.png" />
+    <Content Include="Admin\media\images\xls_hover.png" />
+    <Content Include="Admin\media\js\TableTools.js" />
+    <Content Include="Admin\media\js\TableTools.min.js" />
+    <Content Include="Admin\media\js\ZeroClipboard.js" />
+    <Content Include="Admin\media\swf\copy_csv_xls.swf" />
+    <Content Include="Admin\media\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Admin\media_ColVis\css\ColVis.css" />
+    <Content Include="Admin\media_ColVis\css\ColVisAlt.css" />
+    <Content Include="Admin\media_ColVis\docs\a69b02bcf2.html" />
+    <Content Include="Admin\media_ColVis\docs\ccb5a49865.html" />
+    <Content Include="Admin\media_ColVis\docs\ColVis.html" />
+    <Content Include="Admin\media_ColVis\docs\global.html" />
+    <Content Include="Admin\media_ColVis\docs\index.html" />
+    <Content Include="Admin\media_ColVis\docs\media\css\doc.css" />
+    <Content Include="Admin\media_ColVis\docs\media\css\shCore.css" />
+    <Content Include="Admin\media_ColVis\docs\media\css\shThemeDataTables.css" />
+    <Content Include="Admin\media_ColVis\docs\media\images\arrow.jpg" />
+    <Content Include="Admin\media_ColVis\docs\media\images\extended.png" />
+    <Content Include="Admin\media_ColVis\docs\media\js\doc.js" />
+    <Content Include="Admin\media_ColVis\docs\media\js\jquery.js" />
+    <Content Include="Admin\media_ColVis\docs\media\js\shBrushJScript.js" />
+    <Content Include="Admin\media_ColVis\docs\media\js\shCore.js" />
+    <Content Include="Admin\media_ColVis\images\button.png" />
+    <Content Include="Admin\media_ColVis\js\ColVis.js" />
+    <Content Include="Admin\media_ColVis\js\ColVis.min.js" />
+    <Content Include="Admin\Scripts\css\demo_page.css" />
+    <Content Include="Admin\Scripts\css\demo_table.css" />
+    <Content Include="Admin\Scripts\css\demo_table_jui.css" />
+    <Content Include="Admin\Scripts\css\jquery.dataTables.css" />
+    <Content Include="Admin\Scripts\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.all.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.base.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.button.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.core.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.menu.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.slider.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Admin\Scripts\css\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_4ca300_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_ededed_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_ffcf29_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\black-tie\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-icons_004276_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\blitzer\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\cupertino\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\dark-hive\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_dots-small_20_333333_2x2.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_dots-small_40_00498f_2x2.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-bg_flat_40_292929_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-icons_00498f_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\dot-luv\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-bg_flat_55_994d53_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-bg_flat_55_fafafa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_734d99_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_8d78a5_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_a8a3ae_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_ebccce_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\eggplant\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-bg_flat_0_e69700_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-bg_flat_0_e6b900_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-icons_0a82eb_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-icons_0b54d5_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-icons_5fa5e3_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-icons_fcdd4a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\excite-bike\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-icons_666666_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\flick\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\flick\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-bg_flat_75_ba9217_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_88a206_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_c02669_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_e1e463_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_ffeb33_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\hot-sneaks\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_c47a23_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_cb672b_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_f08000_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_f35f07_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\humanity\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\humanity\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\images\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\images\ui-icons_4eb305_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\images\ui-icons_72b42d_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\le-frog\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_9bcc60_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_add978_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_e3ddc9_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_f1fd86_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\mint-choc\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\overcast\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\overcast\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_b83400_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\pepper-grinder\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\redmond\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\redmond\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\smoothness\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\south-street\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\south-street\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\start\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\start\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\sunny\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\sunny\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_070603_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_e8e2b5_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_e9cd86_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_efec9f_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_f2ec64_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_f9f2bd_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\swanky-purse\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-bg_flat_0_4c4c4c_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-bg_glass_40_0a0a0a_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-bg_glass_55_f1fbe5_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-bg_glass_60_000000_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_000000_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_1f1f1f_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_9fda58_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_b8ec79_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\trontastic\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\ui-darkness\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\ui-lightness\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_666666_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_aaaaaa_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_c98000_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\images\ui-icons_f29a00_256x240.png" />
+    <Content Include="Admin\Scripts\css\themes\vader\jquery-ui.css" />
+    <Content Include="Admin\Scripts\css\themes\vader\jquery.ui.theme.css" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\docs\media\js\doc.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\docs\media\js\jquery.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\docs\media\js\shBrushJScript.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\docs\media\js\shCore.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.min.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColReorder\media\js\ColReorder.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColReorder\media\js\ColReorder.min.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\doc.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\jquery.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\docs\media\js\shCore.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.min.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\doc.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\jquery.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\FixedColumns\docs\media\js\shCore.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\FixedColumns\media\js\FixedColumns.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\TableTools\media\js\TableTools.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\TableTools\media\js\TableTools.min.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\TableTools\media\js\ZeroClipboard.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\media\js\jquery.dataTables.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\media\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\media\js\jquery.js" />
+    <Content Include="Admin\Scripts\images\back_disabled.png" />
+    <Content Include="Admin\Scripts\images\back_enabled.png" />
+    <Content Include="Admin\Scripts\images\back_enabled_hover.png" />
+    <Content Include="Admin\Scripts\images\favicon.ico" />
+    <Content Include="Admin\Scripts\images\forward_disabled.png" />
+    <Content Include="Admin\Scripts\images\forward_enabled.png" />
+    <Content Include="Admin\Scripts\images\forward_enabled_hover.png" />
+    <Content Include="Admin\Scripts\images\sort_asc.png" />
+    <Content Include="Admin\Scripts\images\sort_asc_disabled.png" />
+    <Content Include="Admin\Scripts\images\sort_both.png" />
+    <Content Include="Admin\Scripts\images\sort_desc.png" />
+    <Content Include="Admin\Scripts\images\sort_desc_disabled.png" />
+    <None Include="Admin\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Admin\Scripts\jquery-1.4.1.js" />
+    <Content Include="Admin\Scripts\jquery-1.4.1.min.js" />
+    <None Include="Admin\Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Admin\Scripts\jquery-1.8.2.js" />
+    <Content Include="Admin\Scripts\jquery-1.8.2.min.js" />
+    <None Include="Admin\Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Admin\Scripts\jquery-2.0.3.js" />
+    <Content Include="Admin\Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Admin\Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Admin\Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Admin\Scripts\js\FixedHeader.js" />
+    <Content Include="Admin\Scripts\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Admin\Scripts\js\jquery.dataTables.columnFilter.js" />
+    <Content Include="Admin\Scripts\js\jquery.dataTables.js" />
+    <Content Include="Admin\Scripts\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\Scripts\js\jquery.js" />
+    <Content Include="Admin\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Admin\Scripts\src\api\api.internal.js" />
+    <Content Include="Admin\Scripts\src\api\api.methods.js" />
+    <Content Include="Admin\Scripts\src\api\api.static.js" />
+    <Content Include="Admin\Scripts\src\core\core.ajax.js" />
+    <Content Include="Admin\Scripts\src\core\core.columns.js" />
+    <Content Include="Admin\Scripts\src\core\core.constructor.js" />
+    <Content Include="Admin\Scripts\src\core\core.data.js" />
+    <Content Include="Admin\Scripts\src\core\core.draw.js" />
+    <Content Include="Admin\Scripts\src\core\core.filter.js" />
+    <Content Include="Admin\Scripts\src\core\core.info.js" />
+    <Content Include="Admin\Scripts\src\core\core.init.js" />
+    <Content Include="Admin\Scripts\src\core\core.length.js" />
+    <Content Include="Admin\Scripts\src\core\core.page.js" />
+    <Content Include="Admin\Scripts\src\core\core.processing.js" />
+    <Content Include="Admin\Scripts\src\core\core.scrolling.js" />
+    <Content Include="Admin\Scripts\src\core\core.sizing.js" />
+    <Content Include="Admin\Scripts\src\core\core.sort.js" />
+    <Content Include="Admin\Scripts\src\core\core.state.js" />
+    <Content Include="Admin\Scripts\src\core\core.support.js" />
+    <Content Include="Admin\Scripts\src\DataTables.js" />
+    <Content Include="Admin\Scripts\src\ext\ext.classes.js" />
+    <Content Include="Admin\Scripts\src\ext\ext.paging.js" />
+    <Content Include="Admin\Scripts\src\ext\ext.sorting.js" />
+    <Content Include="Admin\Scripts\src\ext\ext.types.js" />
+    <Content Include="Admin\Scripts\src\model\model.column.js" />
+    <Content Include="Admin\Scripts\src\model\model.defaults.columns.js" />
+    <Content Include="Admin\Scripts\src\model\model.defaults.js" />
+    <Content Include="Admin\Scripts\src\model\model.ext.js" />
+    <Content Include="Admin\Scripts\src\model\model.row.js" />
+    <Content Include="Admin\Scripts\src\model\model.search.js" />
+    <Content Include="Admin\Scripts\src\model\model.settings.js" />
+    <Content Include="Admin\Scripts\unit_testing\controller.js" />
+    <Content Include="Admin\Scripts\unit_testing\index.html" />
+    <Content Include="Admin\Scripts\unit_testing\performance\draw.html" />
+    <Content Include="Admin\Scripts\unit_testing\performance\page.html" />
+    <Content Include="Admin\Scripts\unit_testing\performance\sort.html" />
+    <Content Include="Admin\Scripts\unit_testing\tests\1_dom\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\-complex_header.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\-iDraw.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2512.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2530-2.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2530.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2569.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2600.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2608.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2635.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2746-stable-sort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2799.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2840-restore-table-width.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\2914-state-save-sort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\5396-fnUpdate-arrays-mData.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\5396-fnUpdate-arrays.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\5508-xscroll-zero-content.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\6776-scrolling-table-grows.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aaSortingFixed.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.bSearchable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.bSortable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.bUseRendered.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.bVisible.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.bVisible2.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.fnRender.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.iDataSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.sClass.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.sName.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.sTitle.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoColumns.sWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\asStripClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bInfiniteScroll.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bJQueryUI.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bLengthChange.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bSortCellsTop.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnCookieCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnCreatedCell.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnCreatedRow.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnDeleteRow.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnDrawCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnFooterCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnHeaderCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnInfoCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnInitComplete.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnRowCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnSetColumnVis.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\fnSetColumnVis2.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\html-autodetect-sort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\iDisplayLength.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.oPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sInfoEmpty.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sInfoPostFix.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sLengthMenu.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sUrl.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oLanguage.sZeroRecords.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\sPaginationType.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\sScrollXY.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\th_in_body.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\_getDataFunctions.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\_setDataFunctions.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\1_dom\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\39-nested-null.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aaSortingFixed.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.bSearchable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.bSortable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.bUseRendered.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.bVisible.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.fnRender.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.iDataSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.sClass.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.sName.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.sTitle.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoColumns.sWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\asStripClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bLengthChange.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnCreatedCell.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnCreatedRow.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnDrawCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnFooterCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnHeaderCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnInitComplete.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\fnRowCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\iDisplayLength.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\js_data_mixed_types.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.oPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sInfoEmpty.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sInfoPostFix.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sLengthMenu.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sUrl.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oLanguage.sZeroRecords.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\sPaginationType.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\2_js\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aaSortingFixed.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.bSearchable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.bSortable.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.bUseRendered.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.bVisible.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.fnRender.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.iDataSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.sClass.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.sName.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.sTitle.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoColumns.sWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\asStripClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bLengthChange.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnCreatedCell.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnCreatedRow.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnDrawCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnHeaderCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnInitComplete.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnRowCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\fnServerData.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\iDisplayLength.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.oPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sInfoEmpty.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sInfoPostFix.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sLengthMenu.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sLoadingRecords.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sUrl.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oLanguage.sZeroRecords.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\sAjaxDataProp.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\sAjaxDataProp2.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\sPaginationType.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\3_ajax\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\-iDraw.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\2440.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\2569.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\2600.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aaSortingFixed.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.bVisible.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.fnRender.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.sClass.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.sName.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.sTitle.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoColumns.sWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\asStripClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bInfiniteScroll.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bLengthChange.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnCreatedCell.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnCreatedRow.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnDrawCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnHeaderCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnInitComplete.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\fnRowCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\iDeferLoading.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\iDisplayLength.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\oLanguage.sInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\oLanguage.sSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\oLanguage.sUrl.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\sAjaxDataProp.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\sPaginationType.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\4_server-side\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aaSortingFixed.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sClass.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sName.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sTitle.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\asStripClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bLengthChange.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\fnDrawCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\fnHeaderCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\fnInitComplete.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\fnRowCallback.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\fnServerData.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\iDisplayLength.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sUrl.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\sPaginationType.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\5_ajax_objects\_zero_config_deep.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\aaSorting.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\aoSearchCols.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bAutoWidth.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bFilter.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bInfo.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bPaginate.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bProcessing.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bServerSide.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bSort.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\bSortClasses.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\fnServerData.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\oSearch.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\sAjaxSource.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\sDom.js" />
+    <Content Include="Admin\Scripts\unit_testing\tests_onhold\6_delayed_rendering\_zero_config.js" />
+    <Content Include="Admin\Scripts\unit_testing\unit_test.js" />
+    <Content Include="Admin\Scripts\WebForms\DetailsView.js" />
+    <Content Include="Admin\Scripts\WebForms\Focus.js" />
+    <Content Include="Admin\Scripts\WebForms\GridView.js" />
+    <Content Include="Admin\Scripts\WebForms\Menu.js" />
+    <Content Include="Admin\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Admin\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Admin\Scripts\WebForms\SmartNav.js" />
+    <Content Include="Admin\Scripts\WebForms\TreeView.js" />
+    <Content Include="Admin\Scripts\WebForms\WebForms.js" />
+    <Content Include="Admin\Scripts\WebForms\WebParts.js" />
+    <Content Include="Admin\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Admin\Scripts\_references.js" />
+    <Content Include="bin\Telling - Administration %28ASP.NET%29.dll" />
+    <Content Include="bin\Telling - Administration %28ASP.NET%29.pdb" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Create\frmCreateJob.aspx" />
+    <Content Include="Create\frmCreatePart.aspx" />
+    <Content Include="Create\frmCreateProject.aspx" />
+    <Content Include="Create\frmCreateUser.aspx" />
+    <Content Include="media\css\TableTools.css" />
+    <Content Include="media\css\TableTools_JUI.css" />
+    <Content Include="media\images\background.png" />
+    <Content Include="media\images\collection.png" />
+    <Content Include="media\images\collection_hover.png" />
+    <Content Include="media\images\copy.png" />
+    <Content Include="media\images\copy_hover.png" />
+    <Content Include="media\images\csv.png" />
+    <Content Include="media\images\csv_hover.png" />
+    <Content Include="media\images\pdf.png" />
+    <Content Include="media\images\pdf_hover.png" />
+    <Content Include="media\images\print.png" />
+    <Content Include="media\images\print_hover.png" />
+    <Content Include="media\images\xls.png" />
+    <Content Include="media\images\xls_hover.png" />
+    <Content Include="media\js\TableTools.js" />
+    <Content Include="media\js\TableTools.min.js" />
+    <Content Include="media\js\ZeroClipboard.js" />
+    <Content Include="media\swf\copy_csv_xls.swf" />
+    <Content Include="media\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="media_ColVis\css\ColVis.css" />
+    <Content Include="media_ColVis\css\ColVisAlt.css" />
+    <Content Include="media_ColVis\docs\a69b02bcf2.html" />
+    <Content Include="media_ColVis\docs\ccb5a49865.html" />
+    <Content Include="media_ColVis\docs\ColVis.html" />
+    <Content Include="media_ColVis\docs\global.html" />
+    <Content Include="media_ColVis\docs\index.html" />
+    <Content Include="media_ColVis\docs\media\css\doc.css" />
+    <Content Include="media_ColVis\docs\media\css\shCore.css" />
+    <Content Include="media_ColVis\docs\media\css\shThemeDataTables.css" />
+    <Content Include="media_ColVis\docs\media\images\arrow.jpg" />
+    <Content Include="media_ColVis\docs\media\images\extended.png" />
+    <Content Include="media_ColVis\docs\media\js\doc.js" />
+    <Content Include="media_ColVis\docs\media\js\jquery.js" />
+    <Content Include="media_ColVis\docs\media\js\shBrushJScript.js" />
+    <Content Include="media_ColVis\docs\media\js\shCore.js" />
+    <Content Include="media_ColVis\images\button.png" />
+    <Content Include="media_ColVis\js\ColVis.js" />
+    <Content Include="media_ColVis\js\ColVis.min.js" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net40\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net35-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\Mono.Math.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\Mono.Math.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\Org.Mentalis.Security.Cryptography.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\Org.Mentalis.Security.Cryptography.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\migrate.exe" />
+    <None Include="packages\jQuery.1.8.2\Content\Scripts\jquery-1.8.2-vsdoc.js" />
+    <Content Include="packages\jQuery.1.8.2\Content\Scripts\jquery-1.8.2.js" />
+    <Content Include="packages\jQuery.1.8.2\Content\Scripts\jquery-1.8.2.min.js" />
+    <None Include="packages\jQuery.1.8.2\Tools\jquery-1.8.2.intellisense.js" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery-ui.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Content\Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\Microsoft.AspNet.Membership.OpenAuth.xml" />
+    <Content Include="packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.xml" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.1.2\readme.html" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\DetailsView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\Focus.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\GridView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\Menu.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\SmartNav.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\TreeView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\WebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\WebParts.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\content\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.6.2\Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\WebGrease.1.1.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.1.0\tools\WG.exe" />
+    <Content Include="Search\frmSearchjobs.aspx" />
+    <Content Include="Search\FrmSearchRejectSN.aspx" />
+    <Content Include="Search\frmSearchSerial.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Admin\media\as3\lib\AlivePDF.swc" />
+    <Content Include="Admin\media\as3\ZeroClipboard.as" />
+    <Content Include="Admin\media\as3\ZeroClipboardPdf.as" />
+    <Content Include="Admin\media\images\psd\collection.psd" />
+    <Content Include="Admin\media\images\psd\copy document.psd" />
+    <Content Include="Admin\media\images\psd\file_types.psd" />
+    <Content Include="Admin\media\images\psd\printer.psd" />
+    <Content Include="Admin\media\js\TableTools.min.js.gz" />
+    <Content Include="Admin\media_ColVis\docs\media\license\Syntax Highlighter" />
+    <Content Include="Admin\media_ColVis\js\ColVis.min.js.gz" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\AutoFill\media\js\AutoFill.min.js.gz" />
+    <Content Include="Admin\Scripts\DataTables-1.9.4\extras\ColVis\media\js\ColVis.min.js.gz" />
+    <Content Include="Admin\Scripts\images\Sorting icons.psd" />
+    <Content Include="Admin\Scripts\jquery-2.0.3.min.map" />
+    <Content Include="Admin\Scripts\unit_testing\controller.php" />
+    <Content Include="Admin\Scripts\unit_testing\performance\large.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\-complex_header.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\2512.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\6776.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\complex_header_2.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\deferred_table.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\dom_data.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\dom_data_th.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\dom_data_two_headers.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\dymanic_table.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\empty_table.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\html_table.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\js_data.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\js_data_mixed_types.php" />
+    <Content Include="Admin\Scripts\unit_testing\templates\two_tables.php" />
+    <Content Include="Label Designs\tell Pallet.prn" />
+    <Content Include="Label Designs\Telling Pallet Barcode.lbl" />
+    <Content Include="Label Designs\Telling pALLETQR.lbl" />
+    <Content Include="media\as3\lib\AlivePDF.swc" />
+    <Content Include="media\as3\ZeroClipboard.as" />
+    <Content Include="media\as3\ZeroClipboardPdf.as" />
+    <Content Include="media\images\psd\collection.psd" />
+    <Content Include="media\images\psd\copy document.psd" />
+    <Content Include="media\images\psd\file_types.psd" />
+    <Content Include="media\images\psd\printer.psd" />
+    <Content Include="media\js\TableTools.min.js.gz" />
+    <Content Include="media_ColVis\docs\media\license\Syntax Highlighter" />
+    <Content Include="media_ColVis\js\ColVis.min.js.gz" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.1.8.2\AspNet.ScriptManager.jQuery.1.8.2.nupkg" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.AspNet.4.1.4.12333\DotNetOpenAuth.AspNet.4.1.4.12333.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.Core.4.1.4.12333\DotNetOpenAuth.Core.4.1.4.12333.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\DotNetOpenAuth.OAuth.Core.4.1.4.12333.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\content\net35-full\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\content\net40-full\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\content\net45-full\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\DotNetOpenAuth.OpenId.Core.4.1.4.12333.nupkg" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\content\web.config.transform" />
+    <Content Include="packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333.nupkg" />
+    <Content Include="packages\EntityFramework.5.0.0\Content\App.config.transform" />
+    <Content Include="packages\EntityFramework.5.0.0\Content\Web.config.transform" />
+    <Content Include="packages\EntityFramework.5.0.0\EntityFramework.5.0.0.nupkg" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PS3.psd1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psd1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psm1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\init.ps1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\install.ps1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\Redirect.config" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\Redirect.VS11.config" />
+    <Content Include="packages\jQuery.1.8.2\jQuery.1.8.2.nupkg" />
+    <Content Include="packages\jQuery.1.8.2\Tools\common.ps1" />
+    <Content Include="packages\jQuery.1.8.2\Tools\install.ps1" />
+    <Content Include="packages\jQuery.1.8.2\Tools\uninstall.ps1" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\jQuery.UI.Combined.1.8.24.nupkg" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Tools\common.ps1" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Tools\install.ps1" />
+    <Content Include="packages\jQuery.UI.Combined.1.8.24\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\Microsoft.AspNet.FriendlyUrls.Core.1.0.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\Microsoft.AspNet.Membership.OpenAuth.1.0.1.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.1.2\Microsoft.AspNet.Providers.Core.1.2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Providers.LocalDB.1.1\content\web.config.transform" />
+    <Content Include="packages\Microsoft.AspNet.Providers.LocalDB.1.1\Microsoft.AspNet.Providers.LocalDB.1.1.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Providers.LocalDB.1.1\tools\Install.ps1" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\Microsoft.AspNet.ScriptManager.WebForms.4.5.6.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.0.0\Microsoft.AspNet.Web.Optimization.1.0.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\content\web.config.transform" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\Modernizr.2.6.2\Modernizr.2.6.2.nupkg" />
+    <Content Include="packages\Modernizr.2.6.2\Tools\common.ps1" />
+    <Content Include="packages\Modernizr.2.6.2\Tools\install.ps1" />
+    <Content Include="packages\Modernizr.2.6.2\Tools\uninstall.ps1" />
+    <Content Include="packages\WebGrease.1.1.0\WebGrease.1.1.0.nupkg" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Images\Telling Mobile Logo.png" />
+    <Content Include="Search\frmSearchParts.aspx" />
+    <Content Include="Search\frmSearchProjects.aspx" />
+    <Content Include="Search\frmSearchUsers.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\DeleteJob.aspx.designer.vb">
+      <DependentUpon>DeleteJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteJob.aspx.vb">
+      <DependentUpon>DeleteJob.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeletePart.aspx.designer.vb">
+      <DependentUpon>DeletePart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeletePart.aspx.vb">
+      <DependentUpon>DeletePart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteProject.aspx.designer.vb">
+      <DependentUpon>DeleteProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteProject.aspx.vb">
+      <DependentUpon>DeleteProject.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\AuthConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connection_Component.vb" />
+    <Compile Include="Create\frmCreateJob.aspx.designer.vb">
+      <DependentUpon>frmCreateJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create\frmCreateJob.aspx.vb">
+      <DependentUpon>frmCreateJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create\frmCreatePart.aspx.designer.vb">
+      <DependentUpon>frmCreatePart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create\frmCreatePart.aspx.vb">
+      <DependentUpon>frmCreatePart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create\frmCreateProject.aspx.designer.vb">
+      <DependentUpon>frmCreateProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create\frmCreateProject.aspx.vb">
+      <DependentUpon>frmCreateProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create\frmCreateUser.aspx.designer.vb">
+      <DependentUpon>frmCreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create\frmCreateUser.aspx.vb">
+      <DependentUpon>frmCreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchjobs.aspx.designer.vb">
+      <DependentUpon>frmSearchjobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchjobs.aspx.vb">
+      <DependentUpon>frmSearchjobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\FrmSearchRejectSN.aspx.designer.vb">
+      <DependentUpon>FrmSearchRejectSN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\FrmSearchRejectSN.aspx.vb">
+      <DependentUpon>FrmSearchRejectSN.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchSerial.aspx.designer.vb">
+      <DependentUpon>frmSearchSerial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchSerial.aspx.vb">
+      <DependentUpon>frmSearchSerial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Search\frmSearchParts.aspx.designer.vb">
+      <DependentUpon>frmSearchParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchParts.aspx.vb">
+      <DependentUpon>frmSearchParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchProjects.aspx.designer.vb">
+      <DependentUpon>frmSearchProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchProjects.aspx.vb">
+      <DependentUpon>frmSearchProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchUsers.aspx.designer.vb">
+      <DependentUpon>frmSearchUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchUsers.aspx.vb">
+      <DependentUpon>frmSearchUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Scripts\DataTables-1.9.4\extras\AutoFill\media\docs\media\" />
+    <Folder Include="Admin\Scripts\DataTables-1.9.4\extras\ColReorder\media\docs\" />
+    <Folder Include="Admin\Scripts\DataTables-1.9.4\extras\Scroller\media\docs\media\" />
+    <Folder Include="Admin\Scripts\DataTables-1.9.4\extras\Scroller\media\js\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
